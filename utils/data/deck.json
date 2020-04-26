@@ -1,0 +1,328 @@
+{
+  "cards":[
+    {
+      "suit": "Heart",
+      "type": "Ace",
+      "values": [1, 10, 14],
+      "img": "Ace of Hearts"
+    },
+    {
+      "suit": "Heart",
+      "type": "Two",
+      "values": [2],
+      "img": "Two of Hearts"
+    },
+    {
+      "suit": "Heart",
+      "type": "Three",
+      "values": [3],
+      "img": "Three of Hearts"
+    },
+    {
+      "suit": "Heart",
+      "type": "Four",
+      "values": [4],
+      "img": "Four of Hearts"
+    },
+    {
+      "suit": "Heart",
+      "type": "Five",
+      "values": [5],
+      "img": "Five of Hearts"
+    },
+    {
+      "suit": "Heart",
+      "type": "Six",
+      "values": [6],
+      "img": "Six of Hearts"
+    },
+    {
+      "suit": "Heart",
+      "type": "Seven",
+      "values": [7],
+      "img": "Seven of Hearts"
+    },
+    {
+      "suit": "Heart",
+      "type": "Eight",
+      "values": [8],
+      "img": "Eight of Hearts"
+    },
+    {
+      "suit": "Heart",
+      "type": "Nine",
+      "values": [9],
+      "img": "Nine of Hearts"
+    },
+    {
+      "suit": "Heart",
+      "type": "Ten",
+      "values": [10],
+      "img": "Ten of Hearts"
+    },
+    {
+      "suit": "Heart",
+      "type": "Jack",
+      "values": [10, 11],
+      "img": "Jack of Hearts"
+    },
+    {
+      "suit": "Heart",
+      "type": "Queen",
+      "values": [10, 12],
+      "img": "Queen of Hearts"
+    },
+    {
+      "suit": "Heart",
+      "type": "King",
+      "values": [10, 13],
+      "img": "King of Hearts"
+    },
+    {
+      "suit": "Diamond",
+      "type": "Ace",
+      "values": [1, 10, 14],
+      "img": "Ace of Diamonds"
+    },
+    {
+      "suit": "Diamond",
+      "type": "Two",
+      "values": [2],
+      "img": "Two of Diamonds"
+    },
+    {
+      "suit": "Diamond",
+      "type": "Three",
+      "values": [3],
+      "img": "Three of Diamonds"
+    },
+    {
+      "suit": "Diamond",
+      "type": "Four",
+      "values": [4],
+      "img": "Four of Diamonds"
+    },
+    {
+      "suit": "Diamond",
+      "type": "Five",
+      "values": [5],
+      "img": "Five of Diamonds"
+    },
+    {
+      "suit": "Diamond",
+      "type": "Six",
+      "values": [6],
+      "img": "Six of Diamonds"
+    },
+    {
+      "suit": "Diamond",
+      "type": "Seven",
+      "values": [7],
+      "img": "Seven of Diamonds"
+    },
+    {
+      "suit": "Diamond",
+      "type": "Eight",
+      "values": [8],
+      "img": "Eight of Diamonds"
+    },
+    {
+      "suit": "Diamond",
+      "type": "Nine",
+      "values": [9],
+      "img": "Nine of Diamonds"
+    },
+    {
+      "suit": "Diamond",
+      "type": "Ten",
+      "values": [10],
+      "img": "Ten of Diamonds"
+    },
+    {
+      "suit": "Diamond",
+      "type": "Jack",
+      "values": [10, 11],
+      "img": "Jack of Diamonds"
+    },
+    {
+      "suit": "Diamond",
+      "type": "Queen",
+      "values": [10, 12],
+      "img": "Queen of Diamonds"
+    },
+    {
+      "suit": "Diamond",
+      "type": "King",
+      "values": [10, 13],
+      "img": "King of Diamonds"
+    },
+    {
+      "suit": "Club",
+      "type": "Ace",
+      "values": [1, 10, 14],
+      "img": "Ace of Clubs"
+    },
+    {
+      "suit": "Club",
+      "type": "Two",
+      "values": [2],
+      "img": "Two of Clubs"
+    },
+    {
+      "suit": "Club",
+      "type": "Three",
+      "values": [3],
+      "img": "Three of Clubs"
+    },
+    {
+      "suit": "Club",
+      "type": "Four",
+      "values": [4],
+      "img": "Four of Clubs"
+    },
+    {
+      "suit": "Club",
+      "type": "Five",
+      "values": [5],
+      "img": "Five of Clubs"
+    },
+    {
+      "suit": "Club",
+      "type": "Six",
+      "values": [6],
+      "img": "Six of Clubs"
+    },
+    {
+      "suit": "Club",
+      "type": "Seven",
+      "values": [7],
+      "img": "Seven of Clubs"
+    },
+    {
+      "suit": "Club",
+      "type": "Eight",
+      "values": [8],
+      "img": "Eight of Clubs"
+    },
+    {
+      "suit": "Club",
+      "type": "Nine",
+      "values": [9],
+      "img": "Nine of Clubs"
+    },
+    {
+      "suit": "Club",
+      "type": "Ten",
+      "values": [10],
+      "img": "Ten of Clubs"
+    },
+    {
+      "suit": "Club",
+      "type": "Jack",
+      "values": [10, 11],
+      "img": "Jack of Clubs"
+    },
+    {
+      "suit": "Club",
+      "type": "Queen",
+      "values": [10, 12],
+      "img": "Queen of Clubs"
+    },
+    {
+      "suit": "Club",
+      "type": "King",
+      "values": [10, 13],
+      "img": "King of Clubs"
+    },
+    {
+      "suit": "Spade",
+      "type": "Ace",
+      "values": [1, 10, 14],
+      "img": "Ace of Spades"
+    },
+    {
+      "suit": "Spade",
+      "type": "Two",
+      "values": [2],
+      "img": "Two of Spades"
+    },
+    {
+      "suit": "Spade",
+      "type": "Three",
+      "values": [3],
+      "img": "Three of Spades"
+    },
+    {
+      "suit": "Spade",
+      "type": "Four",
+      "values": [4],
+      "img": "Four of Spades"
+    },
+    {
+      "suit": "Spade",
+      "type": "Five",
+      "values": [5],
+      "img": "Five of Spades"
+    },
+    {
+      "suit": "Spade",
+      "type": "Six",
+      "values": [6],
+      "img": "Six of Spades"
+    },
+    {
+      "suit": "Spade",
+      "type": "Seven",
+      "values": [7],
+      "img": "Seven of Spades"
+    },
+    {
+      "suit": "Spade",
+      "type": "Eight",
+      "values": [8],
+      "img": "Eight of Spades"
+    },
+    {
+      "suit": "Spade",
+      "type": "Nine",
+      "values": [9],
+      "img": "Nine of Spades"
+    },
+    {
+      "suit": "Spade",
+      "type": "Ten",
+      "values": [10],
+      "img": "Ten of Spades"
+    },
+    {
+      "suit": "Spade",
+      "type": "Jack",
+      "values": [10, 11],
+      "img": "Jack of Spades"
+    },
+    {
+      "suit": "Spade",
+      "type": "Queen",
+      "values": [10, 12],
+      "img": "Queen of Spades"
+    },
+    {
+      "suit": "Spade",
+      "type": "King",
+      "values": [10, 13],
+      "img": "King of Spades"
+    },
+    {
+      "suit": "Joker",
+      "type": "Joker",
+      "values": [15],
+      "img": "Joker1"
+    },
+    {
+      "suit": "Joker",
+      "type": "Joker",
+      "values": [15],
+      "img": "Joker2"
+    }
+  ]
+}
