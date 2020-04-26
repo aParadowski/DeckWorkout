@@ -8,7 +8,7 @@
   },
   "include": [
       "src/**/*",
-      "tsDefinitions/**/*"
+      "components/**/*"
   ],
   "exclude": [
       "node_modules",

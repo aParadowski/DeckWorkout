@@ -6,66 +6,55 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React, { useState } from 'react';
 import {
   SafeAreaView,
   StyleSheet,
   ScrollView,
   View,
-  Text,
-  StatusBar,
+  StatusBar
 } from 'react-native';
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import { Text, Content, Button } from 'native-base';
+
+import { WorkoutCard } from './src/components';
+import deck from './utils/data/deck.json';
+import shuffleDeck from './utils/data/deckhelper';
+
+const shuffledDeck = shuffleDeck(deck.cards);
+let remainingDeck = shuffledDeck;
+ 
 
 const App: () => React$Node = () => {
+  // this isn't quite working as it should, this intialize step
+  // makes fetchNewCard pointless but it technically 'works'
+  const [chosenCard, setCard] = useState(remainingDeck[0]);
+
+  const fetchNewCard = () => {
+    const chosenIndex = Math.floor(Math.random() * Math.floor(remainingDeck.length - 1));
+    const newCard = remainingDeck[chosenIndex];
+    setCard(newCard);
+    remainingDeck.splice(chosenIndex, 1);
+  };
+
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
+        <ScrollView>
+          <Content>
+            <View style={{flex:0}}>
+              <Button onPress={() => fetchNewCard()} style={{width: 180, marginLeft: 'auto', marginRight: 'auto'}}>
+                <Text>Get Next Exercise</Text>
+              </Button>
+              <WorkoutCard exercise="Squats" key={chosenCard.img} type={chosenCard.img} values={chosenCard.values} />
+              {/* {
+                shuffledDeck.map(c => 
+                  <WorkoutCard exercise="Squats" key={c.img} type={c.img} values={c.values} />
+                )
+              } */}
             </View>
-          )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
-          </View>
+          </Content> 
         </ScrollView>
       </SafeAreaView>
     </>
@@ -74,41 +63,11 @@ const App: () => React$Node = () => {
 
 const styles = StyleSheet.create({
   scrollView: {
-    backgroundColor: Colors.lighter,
-  },
-  engine: {
-    position: 'absolute',
-    right: 0,
+    backgroundColor: 'gray',
   },
   body: {
-    backgroundColor: Colors.white,
-  },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
-  },
+    backgroundColor: 'white',
+  }
 });
 
 export default App;
